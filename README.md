@@ -1,5 +1,4 @@
-# EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resistor
-
+# EXPERIMENT-NO--03-PRESSURE-MEASUREMENT-USING-ARDUINO-
 
 ## AIM: 
 To interface an FSR(force sensitive resistor) and scale the output voltage obtained to pressure applied 
@@ -15,18 +14,11 @@ To interface an FSR(force sensitive resistor) and scale the output voltage obtai
 ### THEORY: 
 FSRs are basically a resistor that changes its resistive value (in ohms Ω) depending on how much it is pressed. These sensors are fairly low cost, and easy to use. They also vary some from sensor to sensor perhaps 10%. FSR's resistance changes as more pressure is applied. When there is no pressure, the sensor looks like an infinite resistor (open circuit), as the pressure increases, the resistance goes down. This graph indicates approximately the resistance of the sensor at different force measurements.
  
-
 ![image](https://user-images.githubusercontent.com/36288975/163532939-d6888ae1-4068-4d83-86a7-fc4c32d5179e.png)
 
 ### FIGURE 01 GRAPH OF FORCE vs RESISTANCE **
 
-
-
-
 ![image](https://user-images.githubusercontent.com/36288975/163532957-82d57567-a1c3-48c5-8a87-7ea66d6fca49.png)
-
-
-
 
 ### FIGURE 02 FORCE SENSITIVE RESITOR FOIL DISC TYPE  
 
@@ -60,7 +52,7 @@ The easiest way to measure a resistive sensor is to connect one end to power and
 
 ### FIGURE-03 CIRCUIT DIAGRAM
 
-
+![img](ex3robo.png)
 
 ### PROCEDURE:
 1.	Connect the circuit as per the circuit diagram 
@@ -75,15 +67,32 @@ The easiest way to measure a resistive sensor is to connect one end to power and
 10.	Plot the graph for the output voltage vs the resistance 
 
 
-### PROGRAM 
- *your roll no 
- * your name 
- * department and year 
+### PROGRAM :
+ #### NAME:Silambarasan.K
+ #### ROLL NO:212221230101
  
+ ```
+ int Sensorvalue = A0;
+int newton;
+void setup()
+{
+   Serial.begin(9600);
+}
+
+void loop()
+{
+ Sensorvalue=  analogRead(A0);
+ newton = map(Sensorvalue,0,466,0,10);
+ Serial.print("\nRaw Value: ");
+ Serial.println(Sensorvalue);
+ Serial.print("\nForce: ");
+ Serial.println(newton);
+ delay(1000);
+}
+
+```
  
- 
- 
- 
+ ### TABLE -02 standard deviation table
  
  
  
@@ -95,10 +104,9 @@ The easiest way to measure a resistive sensor is to connect one end to power and
  
  
 
-![image](https://user-images.githubusercontent.com/36288975/188804653-a3154e8e-2655-46f2-9dcd-f425dd1ba109.png)
 
+![img](ex3robo.jpeg)
 
-### TABLE -02 standard deviation table 
 ### Population Standard Deviation
 The population standard deviation, the standard definition of σ, is used when an entire population can be measured, and is the square root of the variance of a given data set. In cases where every member of a population can be sampled, the following equation can be used to find the standard deviation of the entire population:
 
@@ -118,15 +126,5 @@ EX:           μ = (1+3+4+7+8) / 5 = 4.6
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-### RESULTS : Arduino uno is interfaced with FSR and output values are indicated on a graph.
+### RESULTS : 
+Arduino uno is interfaced with FSR and output values are indicated on a graph.
