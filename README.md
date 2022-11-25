@@ -1,6 +1,6 @@
 ## EXPERIMENT-NO--03-PRESSURE-MEASUREMENT-USING-ARDUINO-
 
-## AIM: 
+### AIM: 
 To interface an FSR(force sensitive resistor) and scale the output voltage obtained to pressure applied 
  
 ### COMPONENTS REQUIRED:
@@ -69,10 +69,12 @@ The easiest way to measure a resistive sensor is to connect one end to power and
 
 
 ### PROGRAM :
- #### NAME:Silambarasan.K
- #### ROLL NO:212221230101
+
  
  ```
+ Developed By:Silambarasan.K
+ Roll No:212221230101
+ 
  int Sensorvalue = A0;
 int newton;
 void setup()
