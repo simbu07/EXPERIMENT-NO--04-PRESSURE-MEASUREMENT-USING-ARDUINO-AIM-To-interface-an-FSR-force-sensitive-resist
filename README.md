@@ -1,4 +1,4 @@
-## EXPERIMENT-NO--03-PRESSURE-MEASUREMENT-USING-ARDUINO-
+## EXPERIMENT-NO--03-PRESSURE-MEASUREMENT-USING-ARDUINO
 
 ### AIM: 
 To interface an FSR(force sensitive resistor) and scale the output voltage obtained to pressure applied 
@@ -38,18 +38,7 @@ The easiest way to measure a resistive sensor is to connect one end to power and
 ****Where R= 1KΩ in this experiment 
 ****That is, the voltage is proportional to the inverse of the FSR resistance.
 
-
-
-
-
-
-
-
-
-
 ![image](https://user-images.githubusercontent.com/36288975/163532979-a2a5cb5c-f495-442c-843e-bebb82737a35.png)
-
-
 
 ### FIGURE-03 CIRCUIT DIAGRAM
 
@@ -69,12 +58,11 @@ The easiest way to measure a resistive sensor is to connect one end to power and
 
 
 ### PROGRAM :
-
- 
  ```
  Developed By:Silambarasan.K
  Roll No:212221230101
- 
+```
+```c
  int Sensorvalue = A0;
 int newton;
 void setup()
@@ -96,24 +84,10 @@ void loop()
 ```
  
  ### TABLE -02 standard deviation table
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-
-
 ![img](ex3robo.jpeg)
 
-### Population Standard Deviation
+### Population Standard Deviation:
 The population standard deviation, the standard definition of σ, is used when an entire population can be measured, and is the square root of the variance of a given data set. In cases where every member of a population can be sampled, the following equation can be used to find the standard deviation of the entire population:
-
-
 
 Where
 xi is an individual value
@@ -125,8 +99,6 @@ For those unfamiliar with summation notation, the equation above may seem daunti
 EX:           μ = (1+3+4+7+8) / 5 = 4.6        
 σ = √[(1 - 4.6)2 + (3 - 4.6)2 + ... + (8 - 4.6)2)]/5
 σ = √(12.96 + 2.56 + 0.36 + 5.76 + 11.56)/5 = 2.577
-
-
 
 
 ### RESULTS : 
